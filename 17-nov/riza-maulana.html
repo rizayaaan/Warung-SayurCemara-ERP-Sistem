@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hasil Riset Riza Maulana — 10 Market Leader POS Indonesia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --red:#D5372A; --blue:#1D4E89; --yellow:#F2B705; --black:#191919;
+    --paper:#F4EFE6; --cream:#EFE7D8;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    background:var(--paper);
+    font-family:'Space Grotesk',sans-serif;
+    color:var(--black);
+  }
+  /* ===== A3-ish one page ===== */
+  .poster{
+    width:210mm; min-height:297mm; margin:0 auto;
+    padding:12mm; position:relative; overflow:hidden;
+    background:var(--paper);
+    border:14px solid var(--black);
+  }
+  /* Bauhaus geometric decorations */
+  .circle-red{position:absolute;top:-40mm;right:-40mm;width:95mm;height:95mm;border-radius:50%;background:var(--red)}
+  .circle-outline{position:absolute;top:28mm;right:16mm;width:34mm;height:34mm;border-radius:50%;border:3px solid var(--black);background:var(--yellow)}
+  .bar-blue{position:absolute;bottom:0;left:0;width:52mm;height:52mm;background:var(--blue)}
+  .tri-black{position:absolute;bottom:52mm;left:0;width:0;height:0;border-left:52mm solid transparent;border-bottom:52mm solid var(--black);opacity:.92}
+  .half-circle{position:absolute;bottom:0;left:52mm;width:26mm;height:52mm;background:var(--red);border-radius:0 52mm 52mm 0}
+  .thin-line{position:absolute;top:38mm;left:12mm;right:12mm;height:4px;background:var(--black)}
+
+  header{position:relative;z-index:2}
+  .kicker{font-family:'Archivo';font-weight:800;font-size:10px;letter-spacing:.35em;text-transform:uppercase;display:flex;gap:10px;align-items:center}
+  .kicker .sq{width:10px;height:10px;background:var(--red);display:inline-block}
+  h1{
+    font-family:'Archivo';font-weight:900;text-transform:uppercase;
+    font-size:56px;line-height:.95;letter-spacing:-.02em;margin:6mm 0 2mm;
+  }
+  h1 .accent{color:var(--blue)}
+  h1 .red{color:var(--red)}
+  .subtitle{max-width:120mm;font-size:11.5px;line-height:1.5}
+  .meta-chips{display:flex;gap:4mm;margin-top:4mm}
+  .chip{border:2px solid var(--black);padding:1.5mm 3mm;font-family:'Archivo';font-weight:700;font-size:9px;letter-spacing:.12em;text-transform:uppercase;background:var(--cream)}
+  .chip.y{background:var(--yellow)}
+  .chip.r{background:var(--red);color:#fff;border-color:var(--red)}
+
+  .grid{display:grid;grid-template-columns:1.35fr 1fr;gap:8mm;margin-top:7mm;position:relative;z-index:2}
+
+  /* ranked list */
+  ol.leaders{list-style:none;counter-reset:rk}
+  ol.leaders li{
+    counter-increment:rk;display:flex;align-items:center;gap:3.5mm;
+    padding:2.2mm 0;border-bottom:2px solid var(--black);
+  }
+  ol.leaders li::before{
+    content:counter(rk,decimal-leading-zero);
+    font-family:'Archivo';font-weight:900;font-size:17px;
+    width:11mm;height:11mm;flex:0 0 11mm;display:grid;place-items:center;
+    background:var(--black);color:var(--paper);
+  }
+  ol.leaders li:nth-child(3n+1)::before{background:var(--red)}
+  ol.leaders li:nth-child(3n+2)::before{background:var(--blue)}
+  ol.leaders li:nth-child(3n+3)::before{background:var(--yellow);color:var(--black)}
+  .name{font-family:'Archivo';font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:.02em}
+  .desc{font-size:9.5px;line-height:1.35;color:#333}
+
+  /* right column */
+  .panel{border:3px solid var(--black);background:var(--cream);padding:4mm;margin-bottom:5mm}
+  .panel h2{font-family:'Archivo';font-weight:900;font-size:12px;text-transform:uppercase;letter-spacing:.1em;margin-bottom:2.5mm;display:flex;align-items:center;gap:2mm}
+  .panel h2 .dot{width:8px;height:8px;background:var(--red)}
+  .panel.blue{background:var(--blue);color:#fff}
+  .panel.blue h2 .dot{background:var(--yellow)}
+  .panel ul{list-style:none;font-size:9.5px;line-height:1.55}
+  .panel ul li{padding-left:4mm;position:relative;margin-bottom:1.2mm}
+  .panel ul li::before{content:"";position:absolute;left:0;top:.6em;width:2mm;height:2mm;background:currentColor}
+
+  .sources{font-size:8.2px;line-height:1.5}
+  .sources b{font-family:'Archivo';font-weight:700}
+  footer{
+    position:absolute;bottom:4mm;left:12mm;right:12mm;z-index:2;
+    display:flex;justify-content:space-between;align-items:flex-end;
+    font-family:'Archivo';font-weight:700;font-size:8.5px;letter-spacing:.15em;text-transform:uppercase;
+  }
+  .date-block{background:var(--black);color:var(--paper);padding:2mm 3mm;font-weight:900;font-size:12px;letter-spacing:.08em}
+</style>
+</head>
+<body>
+<div class="poster">
+  <!-- Bauhaus shapes -->
+  <div class="circle-red"></div>
+  <div class="circle-outline"></div>
+  <div class="tri-black"></div>
+  <div class="bar-blue"></div>
+  <div class="half-circle"></div>
+
+  <header>
+    <div class="kicker"><span class="sq"></span> HASIL RISET RIZA MAULANA · 12 SUMBER ANALISIS · INDONESIA</div>
+    <h1>10 MARKET LEADER<br><span class="accent">SOFTWARE POS</span> <span class="red">INDONESIA</span></h1>
+    <div class="thin-line"></div>
+    <p class="subtitle">Platform Point of Sale terkuat untuk UMKM &amp; ritel Indonesia — dirangkum dari 12 sumber analisis: laporan riset pasar, konsultan, direktori software, media teknologi, dan kajian akademik. Pemain lokal menguasai ±70% pasar.</p>
+    <div class="meta-chips">
+      <span class="chip">Cloud POS ID: USD 187 jt → 596 jt (2032)</span>
+      <span class="chip y">425 rb outlet termonetisasi</span>
+      <span class="chip r">Edisi 17 November</span>
+    </div>
+  </header>
+
+  <div class="grid">
+    <ol class="leaders">
+            <li><span class="name">Moka POS (GoTo)</span> — <span class="desc">Pionir &amp; terbesar; 45.000+ bisnis, diakuisisi Gojek ±USD 120 jt.</span></li>
+      <li><span class="name">Majoo</span> — <span class="desc">45.000+ merchant, 2 M transaksi, 600 kota; didukung Artha Graha.</span></li>
+      <li><span class="name">ESB</span> — <span class="desc">Raja F&amp;B: 30.000+ restoran, ekosistem kuliner 60.000 bisnis.</span></li>
+      <li><span class="name">Kasir Pintar</span> — <span class="desc">POS mobile mikro-UKM; 30.000 merchant, top-3 pencarian Google.</span></li>
+      <li><span class="name">Qasir</span> — <span class="desc">Freemium untuk warung &amp; UMKM mikro; minat pasar tertinggi.</span></li>
+      <li><span class="name">Olsera</span> — <span class="desc">Basis terluas: 85.000+ pengusaha di 500+ kota/kabupaten.</span></li>
+      <li><span class="name">Pawoon</span> — <span class="desc">Veteran sejak 2014; 25.000+ pemilik bisnis, kuat di F&amp;B.</span></li>
+      <li><span class="name">iSeller</span> — <span class="desc">Spesialis omnichannel (offline + online) dari Ken Research top-5.</span></li>
+      <li><span class="name">iREAP POS</span> — <span class="desc">Andalan ritel menengah; versi Lite gratis untuk mikro-usaha.</span></li>
+      <li><span class="name">Loyverse</span> — <span class="desc">Pemain global gratis, basis pengguna besar di UMKM Indonesia.</span></li>
+    </ol>
+
+    <div>
+      <div class="panel">
+        <h2><span class="dot"></span> Mengapa Daftar Ini</h2>
+        <ul>
+          <li>Ranking = konsensus frekuensi kemunculan di 12 sumber + ukuran basis merchant, bukan pangsa pasar % resmi (tidak dipublikasikan terbuka).</li>
+          <li>Peringkat #1–#5 mengikuti urutan pemain di laporan Ken Research (metodologi 315 wawancara merchant, Agustus 2026).</li>
+          <li>Angka "45.000+ bisnis" dsb bersumber first-party vendor — dipakai hanya setelah triangulasi dengan laporan riset.</li>
+          <li>Pemeringkatan Google Trends (jurnal IPDIG) memvalidasi Moka, Majoo, Kasir Pintar sebagai merek paling dicari.</li>
+        </ul>
+      </div>
+      <div class="panel blue">
+        <h2><span class="dot"></span> Pola Pasar</h2>
+        <ul>
+          <li>Konsolidasi era 2021–2023: GoTo akuisisi Moka, BukuWarung &lt; ESB, dan sebagian besar pemain dibackup VC besar.</li>
+          <li>POS kini pintu masuk ke ekosistem: pembayaran QRIS, pinjaman usaha, supplier, dan kemitraan (Ninja Xpress, Gasolu, dll).</li>
+          <li>Para pemain besar perlahan bergerak ke F&amp;B, ritel multi-outlet, dan waralaba (franchise).</li>
+          <li>Penetrasi UMKM digital masih rendah — ruang pertumbuhan alamiah sangat besar.</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h2><span class="dot"></span> 12 Sumber Analisis</h2>
+        <div class="sources">
+          <b>1. Ken Research</b> — Laporan Cloud POS Indonesia 2026–2032; 315 wawancara; sumber terkuat (ranking #1–#10).<br>
+<b>2. Mordor Intelligence</b> — Riset pasar POS SEA; Indonesia 29,55% pangsa ASEAN (2025).<br>
+<b>3. Locality Partners</b> — Konsultan M&amp;A Jakarta; analisis kompetitor POS+SME software (2026).<br>
+<b>4. DailySocial.id</b> — Media riset startup; wawancara founder Moka &amp; lanskap kompetitor.<br>
+<b>5. Jurnal IPDIG</b> — Kajian akademik Google Trends minat pencarian "aplikasi kasir".<br>
+<b>6. HitPay</b> — Perbandingan POS gratis 2025, data harga resmi vendor.<br>
+<b>7. ScaleOcean</b> — Perbandingan 19 aplikasi POS 2026 (fitur/harga/sektor).<br>
+<b>8. Jubelio</b> — Listikel 21 aplikasi POS dari platform omnichannel besar.<br>
+<b>9. HashMicro &amp; Mekari Jurnal</b> — Vendor ERP tercatat BEI; listikel 2026.<br>
+<b>10. iBOS</b> — Top 10 POS software Indonesia, pembanding pemain utama.<br>
+<b>11. Wikipedia</b> — Profil Moka &amp; ESB, rujukan Kompas/Detik/SWA/Bisnis.<br>
+<b>12. TechCrunch / AgFunderNews</b> — Validasi akuisisi Moka ±USD 120 jt oleh Gojek.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <span>Hasil Riset Riza Maulana · Gaya Bauhaus · 1923 — 2026</span>
+    <span class="date-block">17 NOV</span>
+  </footer>
+</div>
+</body>
+</html>
